@@ -67,4 +67,5 @@ if (questions === true) {
     alert('Have a nice life ' + userName);
 }
 
-alert('Goodbye ' + userName + 'see you later!');
+alert('Goodbye ' + userName + ' see you later!');
+

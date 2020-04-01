@@ -1,8 +1,13 @@
 nav {
-    background-color: rgb(139, 139, 235);
     margin: 0px;
 }
-
+header{
+    
+    border-style: double;
+    margin: 0px;
+    border-color: rgb(0, 132, 255);
+    background-color: rgb(204, 140, 204);
+}
 body {
     min-height: 100%;
     margin: 0px;
