@@ -6,66 +6,66 @@ var questions = confirm('Do you want me to ask you a few questions?');
 if (questions === true) {
 
     //guesing game
-    var iceCream = confirm('Do you like ice cream, because I do');
+    var iceCream = confirm('Do I like ice cream,?');
     if (iceCream === true) {
-        console.log('The user likes ice cream too');
-        alert('The user likes ice cream too');
+        console.log('The user knows I like ice cream');
+        alert('I love ice cream!');
     } else {
-        console.log('ice cream hater');
+        console.log('wrong, who doesn\'t love icecream?');
     }
-    console.log('Do they like icecream: ' + iceCream);
+    console.log('I love icecream and they guessed: ' + iceCream);
 
 
-    var hiking = prompt('On a scale from 1 - 10 how much do youenjoy hiking? (10 is love it, 1 is hate it)');
+    var hiking = prompt('On a scale from 1 - 10 how much do you think I enjoy hiking? (10 is love it, 1 is hate it)');
     if (hiking <= 5) {
-        console.log('Does not like hiking ');
-        alert('Does not like hiking ');
+        console.log('wrong ');
+        alert('Wrong, I love it! ');
         // console.log('You need to get out more ');
     } else {
-        alert('I am so happy you love hiking!');
+        alert('I love hiking!');
         // console.log('likes to Hike');
-        alert('likes to Hike');
+        console.log('Correct on my hiking obsession!');
     }
-    console.log('Like to hike: ' + hiking);
+    console.log('I love hiking 10/10, they guessed: ' + hiking);
 
 
-    var animal = prompt('Are you a cat of a dog person?'.toLocaleLowerCase());
+    var animal = prompt('Am I r cat of a dog person?'.toLocaleLowerCase());
     if (animal === 'Cat' || animal === 'cat') {
         console.log('Cat lover woot woot');
         alert('Cat lover woot woot');
     } else if (animal === 'Dog') {
-        console.log('yay for dog lovers!');
+        console.log('yay for dog lovers but I am a cat lady!');
         alert('yay for dog lovers!');
     } else {
         alert('That isnt a valid answer but we can run with it');
     }
-    console.log('Favorite Animal: ' + animal);
+    console.log('I love cats, they guessed: ' + animal);
 
 
 
-    var company = prompt('What is the best company in the world?'.toLocaleLowerCase());
+    var company = prompt('What is my favorite company in the world?');
     if (company === 'Microsoft') {
-        console.log(company + ' is Awesome!');
+        console.log(company + ' is correct!');
         alert(company + ' is Awesome!');
     } else {
         alert(company + ' is cool too!');
+        console.log(company + ' wrong');
     }
-    console.log('Favorite Company: ' + company);
+    console.log('I love Microsoft, they guessed: ' + company);
 
 
 
-    var phoneLine = prompt('Are you a verizon lover?'.toLocaleLowerCase());
-    if (phoneLine === 'yes') {
-        alert('GOOD!');
-        console.log("They have good taste in phones".toLocaleUpperCase());
+    var phoneLine = prompt('What phone carrier do I have ?'.toLocaleLowerCase());
+    if (phoneLine === 'Verizon') {
+        alert('CORRECT!');
+        console.log("Verizon, Correct".toLocaleUpperCase());
     } else {
-        console.log('Never call them they will never have service!');
-        alert('Never call them they will never have service!');
+        console.log('Nopers');
+        alert('WRONG!');
     }
-    console.log('Verizon is preferred: ' + phoneLine);
+    console.log('I use Verizon, they guessed: ' + phoneLine);
 } else {
     alert('Have a nice life ' + userName);
 }
 
 alert('Goodbye ' + userName + ' see you later!');
-
