@@ -1,7 +1,7 @@
  'use strict';
  var totalRight = 0;
  var userName = prompt('Hey there, what is your name?');
- alert('Welcome to my web page ' + userName);
+ alert('Welcome ' + userName + ' hope you like my page!');
 
  //guesing game
  var iceCream = confirm('Do I like ice cream,?');
@@ -14,7 +14,7 @@
  }
  console.log('I love icecream and they guessed: ' + iceCream);
 
- var hiking = prompt('On a scale from 1 - 10 how much do you think I enjoy hiking? (10 is love it, 1 is hate it)');
+ var hiking = prompt('On a scale from 1 - 10 how much do you think I enjoy hiking? (10 is love it, 1 is hate it)').toLowerCase();
  if (hiking <= 5) {
      console.log('wrong ');
      alert('Wrong, I love it! ');
@@ -27,7 +27,7 @@
  }
  console.log('I love hiking 10/10, they guessed: ' + hiking);
 
- var animal = prompt('Am I a cat of a dog person?').toLocaleLowerCase();
+ var animal = prompt('Am I a cat of a dog person?').toLowerCase();
  if (animal === 'Cat' || animal === 'cat') {
      console.log('Cat lover woot woot');
      alert('Cat lover woot woot');
@@ -41,7 +41,7 @@
  console.log('I love cats, they guessed: ' + animal);
 
 
- var company = prompt('What is my favorite company in the world?');
+ var company = prompt('What is my favorite company in the world?').toLowerCase();
  if (company === 'Microsoft') {
      console.log(company + ' is correct!');
      alert(company + ' is Awesome!');
@@ -52,11 +52,11 @@
  }
  console.log('I love Microsoft, they guessed: ' + company);
 
- var phoneLine = prompt('What phone carrier do I have ?').toLocaleLowerCase();
+ var phoneLine = prompt('What phone carrier do I have ?').toLowerCase();
  if (phoneLine === 'Verizon') {
      alert('CORRECT!');
      totalRight++;
-     console.log("Verizon, Correct".toLocaleUpperCase());
+     console.log("Verizon, Correct".toUpperCase());
  } else {
      console.log('Nopers');
      alert('WRONG!');
@@ -65,7 +65,7 @@
  var answer = 5;
  var attempts = 0;
  do {
-     var guess = prompt('Guess a number between 1 and 20').toLocaleLowerCase();
+     var guess = prompt('Guess a number between 1 and 20').toLowerCase();
      if (guess < answer) {
          alert('Too low');
          break;
@@ -83,7 +83,7 @@
  var count = 0;
  var candies = ['gum', 'chocolate', 'snickers'];
 
- var candyGuess = prompt('Guess my 3 favorite candies!').toLocaleLowerCase();
+ var candyGuess = prompt('Guess my 3 favorite candies!').toLowerCase();
  for (var i = 0; i < 6; i++) {
      if (candyGuess === '' || candyGuess === null) {
          prompt('try again....');
