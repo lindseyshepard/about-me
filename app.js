@@ -1,7 +1,7 @@
  'use strict';
  var totalRight = 0;
  var userName = prompt('Hey there, what is your name?');
- alert('Welcome to my web page ' + userName);
+ alert('Welcome ' + userName + ' hope you like my page!');
 
  function iceCream() {
     var answer = prompt('Do i like ice cream?');
@@ -11,6 +11,7 @@
         alert('you\'re wrong');
     }
  }
+
 
  function hikingscale() {
     var hiking = prompt('On a scale from 1 - 10 how much do you think I enjoy hiking? (10 is love it, 1 is hate it)');
@@ -25,6 +26,7 @@
         totalRight++;
     }
     console.log('I love hiking 10/10, they guessed: ' + hiking);   
+
  }
  //guesing game
 //  var iceCream = confirm('Do I like ice cream,?');
@@ -36,6 +38,7 @@
 //      console.log('wrong, who doesn\'t love icecream?');
 //  }
 //  console.log('I love icecream and they guessed: ' + iceCream);
+
 
 //  var hiking = prompt('On a scale from 1 - 10 how much do you think I enjoy hiking? (10 is love it, 1 is hate it)');
 //  if (hiking <= 5) {
@@ -64,6 +67,7 @@ function catdog() {
     console.log('I love cats, they guessed: ' + animal);
 }
 
+
 function favcompany(){
     var company = prompt('What is my favorite company in the world?').toLowerCase();
     if (company === 'microsoft') {
@@ -76,6 +80,7 @@ function favcompany(){
     }
     console.log('I love Microsoft, they guessed: ' + company);
 }
+
 
 function phone() {
     var phoneLine = prompt('What phone carrier do I have ?').toLowerCase();
