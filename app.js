@@ -68,11 +68,14 @@
      var guess = prompt('Guess a number between 1 and 20').toLocaleLowerCase();
      if (guess < answer) {
          alert('Too low');
+         break;
      } else if (guess > answer) {
          alert('Too high');
+         break;
      } else {
          alert('You got it!');
          totalRight++
+         break;
      }
      attempts++;
  } while (attempts < 4);
@@ -88,10 +91,13 @@
      } else if (candyGuess === candies[i]) {
          prompt('Yay you got a candy! but did you get them all');
          totalRight++;
+         break;
      } else if (candyGuess !== candies[i]) {
          prompt('That was not one of mine though... try again? ');
+         break;
      } else {
          alert('check the console to see how you did!');
+         break;
      }
      count++;
  }
