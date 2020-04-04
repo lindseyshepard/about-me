@@ -7,11 +7,12 @@ header {
 }
 
 nav {
-    background-color: purple;
+    background-color: rgb(196, 117, 196);
 }
 
 body {
     background-color: aqua;
+    font-family: cursive;
 }
 
 span {
