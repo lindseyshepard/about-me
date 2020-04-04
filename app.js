@@ -120,6 +120,7 @@
          count++;
      }
  }
+
  doYouLikeIceCream();
  doYouLikeHiking();
  catdog();
