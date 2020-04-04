@@ -68,7 +68,7 @@
      if (phoneLine === 'verizon') {
          alert('CORRECT!');
          totalRight++;
-         console.log("Verizon, Correct".toUpperCase());
+         console.log("Verizon, Correct");
      } else {
          console.log('Nopers');
          alert('WRONG!');
@@ -127,6 +127,5 @@
  phoneLine();
  guessANumber();
  candyTime();
-
 
  alert(userName + ' score ' + totalRight + ' out of 7!');
